@@ -84,6 +84,8 @@ a { color: inherit; text-decoration: none; }
 .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
 .btn-secondary { border-color: var(--border); color: var(--text); background: transparent; }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.btn-small { padding: .55rem 1.1rem; font-size: .85rem; min-height: 44px; }
+.btn { min-height: 44px; }
 .social-links { list-style: none; display: flex; gap: 1.25rem; flex-wrap: wrap; }
 .social-links a { color: var(--text-muted); font-size: .9rem; font-weight: 500; }
 .social-links a:hover { color: var(--accent); }

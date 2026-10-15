@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Ferreira — Portfolio</title>
+    <title>Jesús Ferreira — Analista de Soporte & Sistemas</title>
+    <meta name="description" content="Portafolio de Jesús Ferreira: analista de soporte al cliente y sistemas con 3+ años de experiencia en SQL, JIRA, Dynatrace y resolución de incidencias.">
+    <meta name="author" content="Jesús Ferreira">
+    <meta name="theme-color" content="#2d5a3d">
+    <link rel="icon" href="./assets/profile-pic.png" type="image/png">
+    <link rel="canonical" href="https://jesussferreira.github.io/">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jesús Ferreira — Portafolio">
+    <meta property="og:description" content="Analista de Soporte & Sistemas: SQL, JIRA, Dynatrace, PL/SQL y más.">
+    <meta property="og:image" content="./assets/profile-pic.png">
+    <meta property="og:url" content="https://jesussferreira.github.io/">
+    <meta name="twitter:card" content="summary">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
+    <a class="skip-link" href="#about">Saltar al contenido</a>
+    <nav id="desktop-nav" aria-label="Navegación principal">
         <div class="logo">Jesús Ferreira</div>
         <div>
             <ul class="nav-links">
@@ -18,19 +33,19 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" aria-label="Navegación móvil">
         <div class="logo">Jesús Ferreira</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+            <button class="hamburger-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
-            <div class="menu-links">
+            </button>
+            <ul class="menu-links" id="mobile-menu">
                 <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
-            </div>
+            </ul>
         </div>
     </nav>
 
@@ -44,18 +59,20 @@
             <h1 class="title">Jesús Ferreira</h1>
             <p class="section__text__p2">Analista de Soporte & Sistemas</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Jesus Ferreira.pdf')">
+                <button class="btn btn-color-2" type="button" onclick="window.open('./assets/Jesus Ferreira.pdf', '_blank', 'noopener')">
                     Descargar CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" type="button" onclick="location.href='./#contact'">
                     Contacto
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/'">
-                <img src="./assets/github.png" alt="GitHub" class="icon"
-                    onclick="location.href='https://github.com/jesussferreira'">
+                <a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                </a>
+                <a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github.png" alt="GitHub" class="icon">
+                </a>
             </div>
         </div>
     </section>
@@ -66,7 +83,7 @@
         <h1 class="title">Sobre Mí</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Foto de perfil" class="about-pic"/>
+                <img src="./assets/about-pic.png" alt="Foto de perfil" class="about-pic" loading="lazy" decoding="async"/>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
@@ -200,7 +217,7 @@
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Ecommerce<br>Básico</h3><p>Avanzado</p></div>
+                            <div><h3>E-commerce</h3><p>Avanzado</p></div>
                         </article>
                     </div>
                 </div>

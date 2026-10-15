@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Ferreira | Analista de Soporte Técnico e Integraciones (Remoto)</title>
-    <meta name="description" content="Portafolio de Jesús Ferreira, analista de soporte técnico e integraciones con 3+ años en software, APIs, SQL/Oracle, monitoreo y automatización con IA. Disponible para roles remotos.">
+    <title>Jesús Ferreira | Analista de Soporte Técnico e Integraciones</title>
+    <meta name="description" content="Portafolio de Jesús Ferreira: soporte técnico remoto, monitoreo, integraciones API/webhook y automatización con IA.">
     <meta name="author" content="Jesús Antonio Ferreira Cardozo">
-    <meta name="keywords" content="analista de soporte técnico, technical support analyst, integraciones API, SQL, Oracle, automatización IA, remote support">
     <meta name="theme-color" content="#1f4d33">
     <link rel="icon" href="./assets/profile-pic.png" type="image/png">
     <link rel="canonical" href="https://jesusantonioferreiracardozo.netlify.app/">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_PY">
     <meta property="og:title" content="Jesús Ferreira | Analista de Soporte Técnico e Integraciones">
-    <meta property="og:description" content="Soporte L1/L2, monitoreo de APIs y sistemas, integraciones ecommerce y automatización con IA.">
+    <meta property="og:description" content="Soporte remoto L1/L2, monitoreo de sistemas/APIs, integraciones ecommerce y automatización con IA.">
     <meta property="og:image" content="https://jesusantonioferreiracardozo.netlify.app/assets/profile-pic.png">
-    <meta property="og:image:width" content="950">
-    <meta property="og:image:height" content="950">
     <meta property="og:url" content="https://jesusantonioferreiracardozo.netlify.app/">
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Jesús Ferreira | Analista de Soporte Técnico e Integraciones">
-    <meta name="twitter:description" content="Portafolio: soporte técnico, monitoreo y integraciones.">
-    <meta name="twitter:image" content="https://jesusantonioferreiracardozo.netlify.app/assets/profile-pic.png">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -40,309 +31,252 @@
       "email": "mailto:cardozoferreirajesus2003@gmail.com",
       "telephone": "+595991928029",
       "url": "https://jesusantonioferreiracardozo.netlify.app/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "San Lorenzo",
-        "addressCountry": "PY"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/",
-        "https://github.com/jesussferreira"
-      ],
+      "address": {"@type": "PostalAddress", "addressLocality": "San Lorenzo", "addressCountry": "PY"},
+      "sameAs": ["https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/", "https://github.com/jesussferreira"],
       "knowsLanguage": ["Spanish", "English"],
       "alumniOf": "Universidad Tecnológica Intercontinental (UTIC)"
     }
     </script>
 </head>
 <body>
-    <a class="skip-link" href="#about">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <nav id="desktop-nav" aria-label="Navegación principal">
-        <div class="logo">Jesús Ferreira</div>
-        <ul class="nav-links">
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#experience">Habilidades</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <nav id="hamburger-nav" aria-label="Navegación móvil">
-        <div class="logo">Jesús Ferreira</div>
-        <div class="hamburger-menu">
-            <button class="hamburger-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a class="logo" href="#inicio">Jesús Ferreira</a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="menu-links" id="mobile-menu">
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#experience">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
+            <ul class="nav-list" id="menu-movil">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- HERO -->
-    <section id="profile">
-        <div class="section__pic-container">
-            <picture>
-                <source srcset="./assets/profile-pic.webp" type="image/webp">
-                <img src="./assets/profile-pic.png" alt="Foto de perfil de Jesús Ferreira" width="950" height="950" fetchpriority="high" decoding="async">
-            </picture>
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hola, soy</p>
-            <h1 class="title">Jesús Ferreira</h1>
-            <p class="section__text__p2">AI Integration &amp; Technical Support Analyst</p>
-            <p class="hero-note">Soporte técnico L1/L2, monitoreo de APIs y sistemas, integraciones ecommerce y automatización con IA. Disponible para roles remotos/internacionales.</p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" type="button" onclick="location.href='#contact'">Contactarme</button>
-                <a class="btn btn-color-2" href="./assets/Jesus%20Ferreira.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+    <main id="contenido">
+        <section id="inicio" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Disponible para roles remotos / internacionales</p>
+                <h1>Jesús Ferreira</h1>
+                <p class="hero-role">AI Integration & Technical Support Analyst</p>
+                <p class="hero-text">
+                    Soporte técnico L1/L2, monitoreo de APIs y sistemas,
+                    integraciones ecommerce y automatización con IA.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contacto">Contactarme</a>
+                    <a class="btn btn-secondary" href="./assets/Jesus%20Ferreira.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                </div>
+                <ul class="social-links" aria-label="Redes">
+                    <li><a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="mailto:cardozoferreirajesus2003@gmail.com">Email</a></li>
+                </ul>
             </div>
-            <div id="socials-container">
-                <a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" width="512" height="512" loading="lazy">
-                </a>
-                <a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <img src="./assets/github.png" alt="GitHub" class="icon" width="512" height="512" loading="lazy">
-                </a>
-                <a href="mailto:cardozoferreirajesus2003@gmail.com" aria-label="Email">
-                    <img src="./assets/email.png" alt="Email" class="icon" width="1000" height="1000" loading="lazy">
-                </a>
-            </div>
-        </div>
-    </section>
+            <aside class="hero-panel" aria-label="Resumen profesional">
+                <div class="metric"><strong>3+</strong><span>años de experiencia</span></div>
+                <div class="metric"><strong>Soporte remoto</strong><span>Envíame Latam</span></div>
+                <div class="metric"><strong>SQL / Oracle</strong><span>Bases de datos</span></div>
+                <div class="metric"><strong>Inglés B2</strong><span>Escrito y hablado</span></div>
+            </aside>
+        </section>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <p class="section__text__p1">Lo que ofrezco</p>
-        <h2 class="title">Servicios</h2>
-        <div class="services-grid">
-            <article class="service-card">
-                <h3>Soporte Técnico L1/L2</h3>
-                <p>Resolución de incidencias técnicas y funcionales, diagnóstico de APIs, front-end y cuentas de usuario, y seguimiento de casos.</p>
-                <a class="service-cta" href="#contact">Solicitar soporte</a>
-            </article>
-            <article class="service-card">
-                <h3>Monitoreo de Sistemas y APIs</h3>
-                <p>Monitoreo proactivo con Dynatrace y Nagios, análisis de rendimiento y reducción de tiempos de respuesta en incidentes críticos.</p>
-                <a class="service-cta" href="#contact">Solicitar monitoreo</a>
-            </article>
-            <article class="service-card">
-                <h3>Integraciones (APIs y Webhooks)</h3>
-                <p>Conexión de plataformas ecommerce con sistemas core mediante REST APIs y webhooks, con pruebas y validación de flujos.</p>
-                <a class="service-cta" href="#contact">Solicitar integración</a>
-            </article>
-            <article class="service-card">
-                <h3>Automatización con IA (en desarrollo)</h3>
-                <p>Prototipos de asistentes con LLMs, memoria contextual y evaluación de privacidad y seguridad.</p>
-                <a class="service-cta" href="#contact">Conversar sobre IA</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <p class="section__text__p1">Conoce más</p>
-        <h2 class="title">Sobre Mí</h2>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <picture>
-                    <source srcset="./assets/about-pic.webp" type="image/webp">
-                    <img src="./assets/about-pic.png" alt="Foto de perfil de Jesús Ferreira" class="about-pic" width="1000" height="1000" loading="lazy" decoding="async">
-                </picture>
+        <section id="servicios" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">Lo que ofrezco</p>
+                <h2>Servicios</h2>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experiencia" class="icon" width="500" height="500" loading="lazy">
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Soporte Técnico L1/L2</h3>
+                    <p>Resolución de incidencias técnicas y funcionales, diagnóstico de APIs, front-end y cuentas de usuario.</p>
+                    <a class="card-link" href="#contacto">Solicitar soporte</a>
+                </article>
+                <article class="card">
+                    <h3>Monitoreo de Sistemas y APIs</h3>
+                    <p>Monitoreo proactivo, análisis de rendimiento y reducción de tiempos de respuesta en incidentes críticos.</p>
+                    <a class="card-link" href="#contacto">Solicitar monitoreo</a>
+                </article>
+                <article class="card">
+                    <h3>Integraciones (APIs y Webhooks)</h3>
+                    <p>Conexión de plataformas ecommerce con sistemas core mediante REST APIs y webhooks.</p>
+                    <a class="card-link" href="#contacto">Solicitar integración</a>
+                </article>
+                <article class="card">
+                    <h3>Automatización con IA (en desarrollo)</h3>
+                    <p>Prototipos de asistentes con LLMs, memoria contextual y evaluación de privacidad.</p>
+                    <a class="card-link" href="#contacto">Conversar sobre IA</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section">
+            <div class="section-heading single">
+                <p class="eyebrow">Conoce más</p>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="about-layout">
+                <div class="about-text">
+                    <p>
+                        Analista de Soporte al Cliente y Sistemas con más de 3 años de experiencia en entornos de software,
+                        especializado en la resolución ágil de incidencias técnicas y funcionales. Experto en análisis de datos
+                        para generar reportes de uso y adopción, monitorear SLAs y mejorar la experiencia del cliente.
+                    </p>
+                    <p>
+                        Actúo como puente entre usuarios y equipos de Customer Success y Desarrollo, utilizando JIRA,
+                        Dynatrace y SQL para garantizar satisfacción del cliente y estabilidad de plataforma.
+                        Trabajo remoto para Envíame Latam; experiencia previa en banca (Banco Atlas) y telecomunicaciones.
+                        Inglés upper-intermediate. Beca académica por excelencia (GPA 5/5).
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="mini-card">
                         <h3>Experiencia</h3>
                         <p>3+ años<br>Soporte & Sistemas</p>
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Educación" class="icon" width="500" height="500" loading="lazy">
+                    <div class="mini-card">
                         <h3>Educación</h3>
                         <p>Lic. Análisis de Sistemas<br>Bachillerato Técnico en Informática</p>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>
-                        Analista de Soporte al Cliente y Sistemas con más de 3 años de experiencia en entornos de software,
-                        especializado en la resolución ágil de incidencias técnicas y funcionales. Experto en el análisis de datos
-                        para generar reportes de uso y adopción, monitorear SLAs y mejorar la experiencia del cliente.
-                        Actúo como puente clave entre usuarios y equipos de Customer Success y Desarrollo, utilizando herramientas
-                        como JIRA, Dynatrace y SQL para garantizar la satisfacción del cliente y la estabilidad de la plataforma.
-                    </p>
-                    <p>
-                        Trabajo remoto para Envíame Latam; experiencia previa en banca (Banco Atlas) y telecomunicaciones.
-                        Inglés upper-intermediate (escrito y hablado). Beca académica por excelencia (GPA 5/5).
-                    </p>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">Trabajo destacado</p>
+                <h2>Proyectos</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Asistente IA para Slack (en desarrollo)</h3>
+                    <p><strong>Problema:</strong> equipo necesita asistente contextual en Slack.</p>
+                    <p><strong>Solución:</strong> bot prototipo con API de DeepSeek y memoria contextual; propuesta de fase 2.</p>
+                    <p><strong>Tecnologías:</strong> Slack API, DeepSeek API, prompt design.</p>
+                    <p><strong>Resultado:</strong> prototipo en desarrollo; propuesta en revisión.</p>
+                </article>
+                <article class="card">
+                    <h3>Integración SIFEN (en desarrollo)</h3>
+                    <p><strong>Problema:</strong> conectar facturación empresarial con SIFEN.</p>
+                    <p><strong>Solución:</strong> diseño de sistema web para integración de facturación.</p>
+                    <p><strong>Tecnologías:</strong> Web, integraciones, APIs.</p>
+                    <p><strong>Resultado:</strong> en diseño/desarrollo; sin demo pública.</p>
+                </article>
+                <article class="card">
+                    <h3>Sitio Web NailsBetti (cliente)</h3>
+                    <p><strong>Problema:</strong> negocio necesitaba presencia web responsive.</p>
+                    <p><strong>Solución:</strong> sitio responsive desplegado en Netlify con GitHub.</p>
+                    <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Netlify.</p>
+                    <p><strong>Resultado:</strong> desplegado; demo/código a solicitud.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Explora mis</p>
+                <h2>Habilidades</h2>
+            </div>
+            <div class="skills-groups">
+                <div class="skill-group">
+                    <h3>Bases de Datos</h3>
+                    <ul>
+                        <li>SQL — Avanzado</li>
+                        <li>PL/SQL — Avanzado</li>
+                        <li>PostgreSQL — Intermedio</li>
+                        <li>Oracle DB — Intermedio</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Monitoreo & Soporte</h3>
+                    <ul>
+                        <li>JIRA — Avanzado</li>
+                        <li>Dynatrace — Intermedio</li>
+                        <li>Nagios — Intermedio</li>
+                        <li>Postman — Intermedio</li>
+                        <li>Git — Intermedio</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Programación</h3>
+                    <ul>
+                        <li>Java — Intermedio</li>
+                        <li>Python — Básico</li>
+                        <li>JavaScript — Básico</li>
+                        <li>HTML/CSS — Intermedio</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Integraciones e IA</h3>
+                    <ul>
+                        <li>REST APIs — Básico</li>
+                        <li>Webhooks — Básico</li>
+                        <li>E-commerce — Avanzado</li>
+                        <li>Excel / Office 365 — Avanzado</li>
+                        <li>LLM APIs (DeepSeek), prompts, RAG — En progreso</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Ir a proyectos" class="icon arrow" onclick="location.href='#projects'" width="1000" height="1000" loading="lazy">
-    </section>
+        </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <p class="section__text__p1">Trabajo destacado</p>
-        <h2 class="title">Proyectos</h2>
-        <div class="projects-grid">
-            <article class="project-card">
-                <h3>Asistente IA para Slack (en desarrollo)</h3>
-                <p class="project-label">Problema</p>
-                <p>Equipo necesita asistente contextual en Slack para consultas y soporte técnico.</p>
-                <p class="project-label">Solución</p>
-                <p>Bot prototipo con API de DeepSeek, memoria contextual y propuesta de fase 2 sobre arquitectura de memoria y privacidad de datos.</p>
-                <p class="project-label">Tecnologías</p>
-                <p>Slack API, DeepSeek API, prompt design.</p>
-                <p class="project-label">Resultado</p>
-                <p>Prototipo en desarrollo; propuesta en revisión por equipo de seguridad e IT.</p>
-            </article>
-            <article class="project-card">
-                <h3>Integración SIFEN (en desarrollo)</h3>
-                <p class="project-label">Problema</p>
-                <p>Conectar la facturación empresarial con el sistema nacional de facturación electrónica de Paraguay (SIFEN).</p>
-                <p class="project-label">Solución</p>
-                <p>Diseño de sistema web para la integración de facturación.</p>
-                <p class="project-label">Tecnologías</p>
-                <p>Web, integraciones, APIs.</p>
-                <p class="project-label">Resultado</p>
-                <p>En diseño/desarrollo; sin demo pública aún.</p>
-            </article>
-            <article class="project-card">
-                <h3>Sitio Web: NailsBetti (cliente)</h3>
-                <p class="project-label">Problema</p>
-                <p>Negocio necesitaba presencia web responsive y profesional.</p>
-                <p class="project-label">Solución</p>
-                <p>Sitio responsive con HTML, CSS y JavaScript desplegado en Netlify con integración GitHub; seguridad básica y SEO, e integración de Google Maps.</p>
-                <p class="project-label">Tecnologías</p>
-                <p>HTML, CSS, JavaScript, Netlify.</p>
-                <p class="project-label">Resultado</p>
-                <p>Desplegado y funcionando. Enlaces a demo/código disponibles a solicitud.</p>
-            </article>
-        </div>
-        <img src="./assets/arrow.png" alt="Ir a habilidades" class="icon arrow" onclick="location.href='#experience'" width="1000" height="1000" loading="lazy">
-    </section>
-
-    <!-- SKILLS -->
-    <section id="experience">
-        <p class="section__text__p1">Explora mis</p>
-        <h2 class="title">Habilidades</h2>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Bases de Datos</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>SQL</h3><p>Avanzado</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>PL/SQL</h3><p>Avanzado</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>PostgreSQL</h3><p>Intermedio</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Oracle DB</h3><p>Intermedio</p></div></article>
+        <section id="contacto" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">Ponte en contacto</p>
+                <h2>Contáctame</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <a href="mailto:cardozoferreirajesus2003@gmail.com">cardozoferreirajesus2003@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="tel:+595991928029">+595 991 928 029</a>
+                    <a href="./assets/Jesus%20Ferreira.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                </div>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" novalidate>
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden-field"><label>No completar <input name="bot-field"></label></p>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" required minlength="2" autocomplete="name">
+                        <small class="form-error" data-for="name"></small>
                     </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Monitoreo & Soporte</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>JIRA</h3><p>Avanzado</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Dynatrace</h3><p>Intermedio</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Nagios</h3><p>Intermedio</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Postman</h3><p>Intermedio</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Git</h3><p>Intermedio</p></div></article>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required autocomplete="email">
+                        <small class="form-error" data-for="email"></small>
                     </div>
-                </div>
-            </div>
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Programación</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Java</h3><p>Intermedio</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Python</h3><p>Básico</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>JavaScript</h3><p>Básico</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>HTML/CSS</h3><p>Intermedio</p></div></article>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input id="subject" name="subject" type="text" required minlength="3">
+                        <small class="form-error" data-for="subject"></small>
                     </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Integraciones, Ofimática e IA</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>REST APIs</h3><p>Básico</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Webhooks</h3><p>Básico</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>E-commerce</h3><p>Avanzado</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Excel / Office 365</h3><p>Avanzado</p></div></article>
-                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>LLM APIs (DeepSeek), prompts, RAG</h3><p>En progreso</p></div></article>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required minlength="10" rows="5"></textarea>
+                        <small class="form-error" data-for="message"></small>
                     </div>
-                </div>
+                    <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
             </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Ir a contacto" class="icon arrow" onclick="location.href='#contact'" width="1000" height="1000" loading="lazy">
-    </section>
+        </section>
+    </main>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <p class="section__text__p1">Ponte en contacto</p>
-        <h2 class="title">Contáctame</h2>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon" width="1000" height="1000" loading="lazy">
-                <p><a href="mailto:cardozoferreirajesus2003@gmail.com">cardozoferreirajesus2003@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" width="512" height="512" loading="lazy">
-                <p><a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/github.png" alt="GitHub" class="icon contact-icon" width="512" height="512" loading="lazy">
-                <p><a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="contact-info-container">
-                <p><a href="tel:+595991928029">+595 991 928 029</a></p>
-            </div>
-        </div>
-
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/#contact" class="contact-form" novalidate>
-            <input type="hidden" name="form-name" value="contact">
-            <p class="hidden-field">
-                <label>No completar este campo <input name="bot-field"></label>
-            </p>
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input id="name" name="name" type="text" required autocomplete="name" minlength="2">
-                <small class="form-error" data-for="name"></small>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required autocomplete="email">
-                <small class="form-error" data-for="email"></small>
-            </div>
-            <div class="form-group">
-                <label for="subject">Asunto</label>
-                <input id="subject" name="subject" type="text" required minlength="3">
-                <small class="form-error" data-for="subject"></small>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required minlength="10" rows="5"></textarea>
-                <small class="form-error" data-for="message"></small>
-            </div>
-            <button class="btn btn-color-1" type="submit">Enviar mensaje</button>
-            <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-    </section>
-
-    <footer>
+    <footer class="site-footer">
         <nav aria-label="Navegación secundaria">
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#experience">Habilidades</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
+            <ul class="nav-list center">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
-        <p>&copy; 2026 Jesús Ferreira. Todos los derechos reservados.</p>
+        <p>© 2026 Jesús Ferreira. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>

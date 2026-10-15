@@ -1,37 +1,28 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    if (!menu || !icon) return;
-    const isOpen = menu.classList.toggle("open");
-    icon.classList.toggle("open", isOpen);
-    icon.setAttribute("aria-expanded", String(isOpen));
-    icon.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-}
-
 function initMenu() {
-    const icon = document.querySelector(".hamburger-icon");
-    const menu = document.querySelector(".menu-links");
-    if (!icon || !menu) return;
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector("#menu-movil");
+    if (!toggle || !menu) return;
 
-    icon.addEventListener("click", toggleMenu);
+    function setMenu(isOpen) {
+        menu.classList.toggle("open", isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+    }
 
+    toggle.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
     menu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-            if (menu.classList.contains("open")) toggleMenu();
-        });
+        link.addEventListener("click", () => setMenu(false));
     });
-
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && menu.classList.contains("open")) {
-            toggleMenu();
-            icon.focus();
+            setMenu(false);
+            toggle.focus();
         }
     });
-
     document.addEventListener("click", (event) => {
         if (!menu.classList.contains("open")) return;
-        const wrapper = document.querySelector(".hamburger-menu");
-        if (wrapper && !wrapper.contains(event.target)) toggleMenu();
+        const nav = document.querySelector(".site-nav");
+        if (nav && !nav.contains(event.target)) setMenu(false);
     });
 }
 
@@ -40,10 +31,10 @@ function initContactForm() {
     if (!form) return;
     const status = form.querySelector(".form-status");
     const validators = {
-        name: (value) => value.trim().length >= 2 ? "" : "Ingresa tu nombre (mínimo 2 caracteres).",
-        email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ? "" : "Ingresa un email válido.",
-        subject: (value) => value.trim().length >= 3 ? "" : "Ingresa un asunto (mínimo 3 caracteres).",
-        message: (value) => value.trim().length >= 10 ? "" : "El mensaje debe tener mínimo 10 caracteres."
+        name: (v) => v.trim().length >= 2 ? "" : "Ingresa tu nombre (mínimo 2 caracteres).",
+        email: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Ingresa un email válido.",
+        subject: (v) => v.trim().length >= 3 ? "" : "Ingresa un asunto (mínimo 3 caracteres).",
+        message: (v) => v.trim().length >= 10 ? "" : "El mensaje debe tener mínimo 10 caracteres."
     };
 
     function setError(field, message) {
@@ -67,9 +58,7 @@ function initContactForm() {
     Object.keys(validators).forEach((field) => {
         const input = form.querySelector(`[name="${field}"]`);
         if (!input) return;
-        input.addEventListener("blur", () => {
-            setError(field, validators[field](input.value));
-        });
+        input.addEventListener("blur", () => setError(field, validators[field](input.value)));
         input.addEventListener("input", () => {
             if (input.getAttribute("aria-invalid") === "true") {
                 setError(field, validators[field](input.value));
@@ -83,7 +72,6 @@ function initContactForm() {
             if (status) status.textContent = "Revisa los campos marcados.";
             return;
         }
-
         const honeypot = form.querySelector('[name="bot-field"]');
         if (honeypot && honeypot.value.trim() !== "") {
             event.preventDefault();
@@ -91,8 +79,8 @@ function initContactForm() {
         }
 
         event.preventDefault();
-        const originalLabel = form.querySelector('button[type="submit"]').textContent;
         const submitBtn = form.querySelector('button[type="submit"]');
+        const originalLabel = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = "Enviando...";
         if (status) status.textContent = "";
@@ -100,7 +88,7 @@ function initContactForm() {
         try {
             const response = await fetch("/", {
                 method: "POST",
-                headers: { "Accept": "application/x-www-form-urlencoded" },
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(new FormData(form)).toString()
             });
             if (!response.ok) throw new Error("network");

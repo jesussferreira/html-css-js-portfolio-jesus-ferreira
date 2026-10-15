@@ -3,48 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Ferreira — Analista de Soporte & Sistemas</title>
-    <meta name="description" content="Portafolio de Jesús Ferreira: analista de soporte al cliente y sistemas con 3+ años de experiencia en SQL, JIRA, Dynatrace y resolución de incidencias.">
-    <meta name="author" content="Jesús Ferreira">
-    <meta name="theme-color" content="#2d5a3d">
+    <title>Jesús Ferreira | Analista de Soporte Técnico e Integraciones (Remoto)</title>
+    <meta name="description" content="Portafolio de Jesús Ferreira, analista de soporte técnico e integraciones con 3+ años en software, APIs, SQL/Oracle, monitoreo y automatización con IA. Disponible para roles remotos.">
+    <meta name="author" content="Jesús Antonio Ferreira Cardozo">
+    <meta name="keywords" content="analista de soporte técnico, technical support analyst, integraciones API, SQL, Oracle, automatización IA, remote support">
+    <meta name="theme-color" content="#1f4d33">
     <link rel="icon" href="./assets/profile-pic.png" type="image/png">
-    <link rel="canonical" href="https://jesussferreira.github.io/">
+    <link rel="canonical" href="https://jesusantonioferreiracardozo.netlify.app/">
 
-    <!-- Open Graph / Social -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Jesús Ferreira — Portafolio">
-    <meta property="og:description" content="Analista de Soporte & Sistemas: SQL, JIRA, Dynatrace, PL/SQL y más.">
-    <meta property="og:image" content="./assets/profile-pic.png">
-    <meta property="og:url" content="https://jesussferreira.github.io/">
+    <meta property="og:locale" content="es_PY">
+    <meta property="og:title" content="Jesús Ferreira | Analista de Soporte Técnico e Integraciones">
+    <meta property="og:description" content="Soporte L1/L2, monitoreo de APIs y sistemas, integraciones ecommerce y automatización con IA.">
+    <meta property="og:image" content="https://jesusantonioferreiracardozo.netlify.app/assets/profile-pic.png">
+    <meta property="og:image:width" content="950">
+    <meta property="og:image:height" content="950">
+    <meta property="og:url" content="https://jesusantonioferreiracardozo.netlify.app/">
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jesús Ferreira | Analista de Soporte Técnico e Integraciones">
+    <meta name="twitter:description" content="Portafolio: soporte técnico, monitoreo y integraciones.">
+    <meta name="twitter:image" content="https://jesusantonioferreiracardozo.netlify.app/assets/profile-pic.png">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jesús Antonio Ferreira Cardozo",
+      "alternateName": "Jesús Ferreira",
+      "jobTitle": "AI Integration & Technical Support Analyst",
+      "email": "mailto:cardozoferreirajesus2003@gmail.com",
+      "telephone": "+595991928029",
+      "url": "https://jesusantonioferreiracardozo.netlify.app/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Lorenzo",
+        "addressCountry": "PY"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/",
+        "https://github.com/jesussferreira"
+      ],
+      "knowsLanguage": ["Spanish", "English"],
+      "alumniOf": "Universidad Tecnológica Intercontinental (UTIC)"
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#about">Saltar al contenido</a>
+
     <nav id="desktop-nav" aria-label="Navegación principal">
         <div class="logo">Jesús Ferreira</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#experience">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#experience">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </nav>
+
     <nav id="hamburger-nav" aria-label="Navegación móvil">
         <div class="logo">Jesús Ferreira</div>
         <div class="hamburger-menu">
-            <button class="hamburger-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="hamburger-icon" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
             </button>
             <ul class="menu-links" id="mobile-menu">
-                <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -52,48 +87,82 @@
     <!-- HERO -->
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Jesús Ferreira foto de perfil"/>
+            <picture>
+                <source srcset="./assets/profile-pic.webp" type="image/webp">
+                <img src="./assets/profile-pic.png" alt="Foto de perfil de Jesús Ferreira" width="950" height="950" fetchpriority="high" decoding="async">
+            </picture>
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hola, soy</p>
             <h1 class="title">Jesús Ferreira</h1>
-            <p class="section__text__p2">Analista de Soporte & Sistemas</p>
+            <p class="section__text__p2">AI Integration &amp; Technical Support Analyst</p>
+            <p class="hero-note">Soporte técnico L1/L2, monitoreo de APIs y sistemas, integraciones ecommerce y automatización con IA. Disponible para roles remotos/internacionales.</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" type="button" onclick="window.open('./assets/Jesus Ferreira.pdf', '_blank', 'noopener')">
-                    Descargar CV
-                </button>
-                <button class="btn btn-color-1" type="button" onclick="location.href='./#contact'">
-                    Contacto
-                </button>
+                <button class="btn btn-color-1" type="button" onclick="location.href='#contact'">Contactarme</button>
+                <a class="btn btn-color-2" href="./assets/Jesus%20Ferreira.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
             </div>
             <div id="socials-container">
-                <a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                <a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" width="512" height="512" loading="lazy">
                 </a>
-                <a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/github.png" alt="GitHub" class="icon">
+                <a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="./assets/github.png" alt="GitHub" class="icon" width="512" height="512" loading="lazy">
+                </a>
+                <a href="mailto:cardozoferreirajesus2003@gmail.com" aria-label="Email">
+                    <img src="./assets/email.png" alt="Email" class="icon" width="1000" height="1000" loading="lazy">
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <p class="section__text__p1">Lo que ofrezco</p>
+        <h2 class="title">Servicios</h2>
+        <div class="services-grid">
+            <article class="service-card">
+                <h3>Soporte Técnico L1/L2</h3>
+                <p>Resolución de incidencias técnicas y funcionales, diagnóstico de APIs, front-end y cuentas de usuario, y seguimiento de casos.</p>
+                <a class="service-cta" href="#contact">Solicitar soporte</a>
+            </article>
+            <article class="service-card">
+                <h3>Monitoreo de Sistemas y APIs</h3>
+                <p>Monitoreo proactivo con Dynatrace y Nagios, análisis de rendimiento y reducción de tiempos de respuesta en incidentes críticos.</p>
+                <a class="service-cta" href="#contact">Solicitar monitoreo</a>
+            </article>
+            <article class="service-card">
+                <h3>Integraciones (APIs y Webhooks)</h3>
+                <p>Conexión de plataformas ecommerce con sistemas core mediante REST APIs y webhooks, con pruebas y validación de flujos.</p>
+                <a class="service-cta" href="#contact">Solicitar integración</a>
+            </article>
+            <article class="service-card">
+                <h3>Automatización con IA (en desarrollo)</h3>
+                <p>Prototipos de asistentes con LLMs, memoria contextual y evaluación de privacidad y seguridad.</p>
+                <a class="service-cta" href="#contact">Conversar sobre IA</a>
+            </article>
         </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
         <p class="section__text__p1">Conoce más</p>
-        <h1 class="title">Sobre Mí</h1>
+        <h2 class="title">Sobre Mí</h2>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Foto de perfil" class="about-pic" loading="lazy" decoding="async"/>
+                <picture>
+                    <source srcset="./assets/about-pic.webp" type="image/webp">
+                    <img src="./assets/about-pic.png" alt="Foto de perfil de Jesús Ferreira" class="about-pic" width="1000" height="1000" loading="lazy" decoding="async">
+                </picture>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experiencia" class="icon"/>
+                        <img src="./assets/experience.png" alt="Experiencia" class="icon" width="500" height="500" loading="lazy">
                         <h3>Experiencia</h3>
                         <p>3+ años<br>Soporte & Sistemas</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Educación" class="icon"/>
+                        <img src="./assets/education.png" alt="Educación" class="icon" width="500" height="500" loading="lazy">
                         <h3>Educación</h3>
                         <p>Lic. Análisis de Sistemas<br>Bachillerato Técnico en Informática</p>
                     </div>
@@ -106,154 +175,174 @@
                         Actúo como puente clave entre usuarios y equipos de Customer Success y Desarrollo, utilizando herramientas
                         como JIRA, Dynatrace y SQL para garantizar la satisfacción del cliente y la estabilidad de la plataforma.
                     </p>
+                    <p>
+                        Trabajo remoto para Envíame Latam; experiencia previa en banca (Banco Atlas) y telecomunicaciones.
+                        Inglés upper-intermediate (escrito y hablado). Beca académica por excelencia (GPA 5/5).
+                    </p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Siguiente sección" class="icon arrow" onclick="location.href='./#experience'"/>
+        <img src="./assets/arrow.png" alt="Ir a proyectos" class="icon arrow" onclick="location.href='#projects'" width="1000" height="1000" loading="lazy">
     </section>
 
-    <!-- SKILLS / EXPERIENCE -->
+    <!-- PROJECTS -->
+    <section id="projects">
+        <p class="section__text__p1">Trabajo destacado</p>
+        <h2 class="title">Proyectos</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Asistente IA para Slack (en desarrollo)</h3>
+                <p class="project-label">Problema</p>
+                <p>Equipo necesita asistente contextual en Slack para consultas y soporte técnico.</p>
+                <p class="project-label">Solución</p>
+                <p>Bot prototipo con API de DeepSeek, memoria contextual y propuesta de fase 2 sobre arquitectura de memoria y privacidad de datos.</p>
+                <p class="project-label">Tecnologías</p>
+                <p>Slack API, DeepSeek API, prompt design.</p>
+                <p class="project-label">Resultado</p>
+                <p>Prototipo en desarrollo; propuesta en revisión por equipo de seguridad e IT.</p>
+            </article>
+            <article class="project-card">
+                <h3>Integración SIFEN (en desarrollo)</h3>
+                <p class="project-label">Problema</p>
+                <p>Conectar la facturación empresarial con el sistema nacional de facturación electrónica de Paraguay (SIFEN).</p>
+                <p class="project-label">Solución</p>
+                <p>Diseño de sistema web para la integración de facturación.</p>
+                <p class="project-label">Tecnologías</p>
+                <p>Web, integraciones, APIs.</p>
+                <p class="project-label">Resultado</p>
+                <p>En diseño/desarrollo; sin demo pública aún.</p>
+            </article>
+            <article class="project-card">
+                <h3>Sitio Web: NailsBetti (cliente)</h3>
+                <p class="project-label">Problema</p>
+                <p>Negocio necesitaba presencia web responsive y profesional.</p>
+                <p class="project-label">Solución</p>
+                <p>Sitio responsive con HTML, CSS y JavaScript desplegado en Netlify con integración GitHub; seguridad básica y SEO, e integración de Google Maps.</p>
+                <p class="project-label">Tecnologías</p>
+                <p>HTML, CSS, JavaScript, Netlify.</p>
+                <p class="project-label">Resultado</p>
+                <p>Desplegado y funcionando. Enlaces a demo/código disponibles a solicitud.</p>
+            </article>
+        </div>
+        <img src="./assets/arrow.png" alt="Ir a habilidades" class="icon arrow" onclick="location.href='#experience'" width="1000" height="1000" loading="lazy">
+    </section>
+
+    <!-- SKILLS -->
     <section id="experience">
         <p class="section__text__p1">Explora mis</p>
-        <h1 class="title">Habilidades</h1>
+        <h2 class="title">Habilidades</h2>
         <div class="experience-details-container">
             <div class="about-containers">
-
-                <!-- DATA & REPORTS -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Datos & Reportes</h2>
+                    <h2 class="experience-sub-title">Bases de Datos</h2>
                     <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>SQL</h3><p>Avanzado</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>PL/SQL</h3><p>Avanzado</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>PostgreSQL</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Oracle DB</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Excel</h3><p>Avanzado</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Office 365</h3><p>Avanzado</p></div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>SQL</h3><p>Avanzado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>PL/SQL</h3><p>Avanzado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>PostgreSQL</h3><p>Intermedio</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Oracle DB</h3><p>Intermedio</p></div></article>
                     </div>
                 </div>
-
-                <!-- MONITORING & SUPPORT -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Monitoreo & Soporte</h2>
                     <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>JIRA</h3><p>Avanzado</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Dynatrace</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Nagios</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Postman</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Git</h3><p>Intermedio</p></div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>JIRA</h3><p>Avanzado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Dynatrace</h3><p>Intermedio</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Nagios</h3><p>Intermedio</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Postman</h3><p>Intermedio</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Git</h3><p>Intermedio</p></div></article>
                     </div>
                 </div>
-
             </div>
             <div class="about-containers">
-
-                <!-- PROGRAMMING LANGUAGES -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Lenguajes</h2>
+                    <h2 class="experience-sub-title">Programación</h2>
                     <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Java</h3><p>Intermedio</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Python</h3><p>Básico</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>JavaScript</h3><p>Básico</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>HTML/CSS</h3><p>Intermedio</p></div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Java</h3><p>Intermedio</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Python</h3><p>Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>JavaScript</h3><p>Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>HTML/CSS</h3><p>Intermedio</p></div></article>
                     </div>
                 </div>
-
-                <!-- INTEGRATIONS -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Integraciones & APIs</h2>
+                    <h2 class="experience-sub-title">Integraciones, Ofimática e IA</h2>
                     <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>REST APIs</h3><p>Básico</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>Webhooks</h3><p>Básico</p></div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="check" class="icon"/>
-                            <div><h3>E-commerce</h3><p>Avanzado</p></div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>REST APIs</h3><p>Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Webhooks</h3><p>Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>E-commerce</h3><p>Avanzado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>Excel / Office 365</h3><p>Avanzado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="" class="icon" width="1000" height="1000" loading="lazy"><div><h3>LLM APIs (DeepSeek), prompts, RAG</h3><p>En progreso</p></div></article>
                     </div>
                 </div>
-
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Siguiente" class="icon arrow" onclick="location.href='./#contact'"/>
+        <img src="./assets/arrow.png" alt="Ir a contacto" class="icon arrow" onclick="location.href='#contact'" width="1000" height="1000" loading="lazy">
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
         <p class="section__text__p1">Ponte en contacto</p>
-        <h1 class="title">Contáctame</h1>
+        <h2 class="title">Contáctame</h2>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon"/>
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon" width="1000" height="1000" loading="lazy">
                 <p><a href="mailto:cardozoferreirajesus2003@gmail.com">cardozoferreirajesus2003@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/">LinkedIn</a></p>
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" width="512" height="512" loading="lazy">
+                <p><a href="https://www.linkedin.com/in/jes%C3%BAs-ferreira-cardozo-a3a8511b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png" alt="GitHub" class="icon contact-icon" width="512" height="512" loading="lazy">
+                <p><a href="https://github.com/jesussferreira" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+            <div class="contact-info-container">
+                <p><a href="tel:+595991928029">+595 991 928 029</a></p>
             </div>
         </div>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/#contact" class="contact-form" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden-field">
+                <label>No completar este campo <input name="bot-field"></label>
+            </p>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" required autocomplete="name" minlength="2">
+                <small class="form-error" data-for="name"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+                <small class="form-error" data-for="email"></small>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input id="subject" name="subject" type="text" required minlength="3">
+                <small class="form-error" data-for="subject"></small>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required minlength="10" rows="5"></textarea>
+                <small class="form-error" data-for="message"></small>
+            </div>
+            <button class="btn btn-color-1" type="submit">Enviar mensaje</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
     </section>
 
     <footer>
-        <nav>
+        <nav aria-label="Navegación secundaria">
             <div class="nav-links-container">
                 <ul class="nav-links">
+                    <li><a href="#services">Servicios</a></li>
                     <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#experience">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2026 Jesús Ferreira. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Jesús Ferreira. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>

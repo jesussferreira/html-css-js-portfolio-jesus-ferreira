@@ -14,7 +14,7 @@
     transition: max-height .25s ease, opacity .25s ease;
   }
   .nav-list.open { max-height: 400px; opacity: 1; pointer-events: auto; }
-  .nav-list a { padding: .75rem; border-radius: .5rem; }
+  .nav-list a { padding: .75rem; border-radius: .5rem; min-height: 44px; display: flex; align-items: center; }
   .nav-list a:hover { background: var(--accent-soft); }
   .hero-panel { grid-template-columns: 1fr; }
   .section { padding: 4rem 1.25rem; }
